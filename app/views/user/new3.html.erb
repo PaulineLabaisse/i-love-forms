@@ -1,0 +1,7 @@
+<h2>Formulaire form_for</h2>
+   <%= form_for @user, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
+     <%= f.text_field :username %>
+     <%= f.text_field :email %>
+     <%= f.text_area :bio %>
+     <%= f.submit "Create" %>
+   <% end %>

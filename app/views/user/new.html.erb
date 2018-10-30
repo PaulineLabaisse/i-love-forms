@@ -1,0 +1,19 @@
+<h1>Inscrivez-vous</h1>
+<p>Si vous etes des FDP passionés, entrez vos infos, bande de batards: </p>
+<br />
+<form_tag action ='/formulaire' method="post">
+  <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token %>">
+
+  <p>Prenom</p>
+  <input type="text" name="username">
+  
+  <br />
+  <p>Email</p>
+  <input type="text" name="email">
+ 
+  <br />
+  <p>Votre passion</p>
+  <input type="text" name="bio">
+  <input type="submit" name='Envoyer'>
+
+</form>
