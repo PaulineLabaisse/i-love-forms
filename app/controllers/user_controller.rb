@@ -7,13 +7,12 @@ class UserController < ApplicationController
 	end
 
 	def create
-		puts params
 		user = User.new
 		user.username = params["username"]
 		user.email = params["email"]
 		user.bio = params["bio"]
 		user.save
-		puts user
+		redirect_to('/')
 	end
 
 	def new2
@@ -27,7 +26,7 @@ class UserController < ApplicationController
 		user.email = params["email"]
 		user.bio = params["bio"]
 		user.save
-		puts user
+		redirect_to('/')
 	end
 
 	def new3
@@ -41,7 +40,7 @@ class UserController < ApplicationController
 		user.email = params["email"]
 		user.bio = params["bio"]
 		user.save
-		puts user
+		redirect_to('/')
 	end
 
 end
