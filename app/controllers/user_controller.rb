@@ -1,4 +1,8 @@
 class UserController < ApplicationController
+	def home
+
+	end
+
 	def new
 	end
 
@@ -39,4 +43,5 @@ class UserController < ApplicationController
 		user.save
 		puts user
 	end
+
 end
