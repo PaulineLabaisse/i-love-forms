@@ -3,7 +3,7 @@
 <nav class="navbar fixed-top navbar-light bg-dark">    
     <ul class="nav nav-pills nav-fill">
       <li class="nav-item">
-        <a class="nav-link active" href="/">Home</a>
+        <a class="nav-link" href="/">Home</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/formulaire">Formulaire 1</a>
@@ -12,7 +12,7 @@
         <a class="nav-link" href="/formulaire2">Formulaire 2</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/formulaire3">Formulaire 3</a>
+        <a class="nav-link active" href="/formulaire3">Formulaire 3</a>
       </li>
     </ul>
 </nav>
@@ -20,11 +20,13 @@
 <body class="vertical-center" style=“width: 400px;“>
 
 <h1 class = "BLA">Formulaire form_for</h1>
+</br>
    <%= form_for @user, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
 
      <p>Nom</p><%= f.text_field :username %><br />
      <p>Email</p><%= f.text_field :email %><br />
      <p>Bio</p><%= f.text_area :bio %><br />
+ </br>
      <%= f.submit "submit" %>
    <% end %>
 
