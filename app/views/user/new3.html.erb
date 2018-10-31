@@ -1,7 +1,32 @@
-<h2>Formulaire form_for</h2>
+<html>
+<header>
+<nav class="navbar fixed-top navbar-light bg-dark">    
+    <ul class="nav nav-pills nav-fill">
+      <li class="nav-item">
+        <a class="nav-link active" href="/">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/formulaire">Formulaire 1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/formulaire2">Formulaire 2</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/formulaire3">Formulaire 3</a>
+      </li>
+    </ul>
+</nav>
+</header>
+<body class="vertical-center" style=“width: 400px;“>
+
+<h1 class = "BLA">Formulaire form_for</h1>
    <%= form_for @user, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
-     <%= f.text_field :username %>
-     <%= f.text_field :email %>
-     <%= f.text_area :bio %>
-     <%= f.submit "Create" %>
+
+     <p>Nom</p><%= f.text_field :username %><br />
+     <p>Email</p><%= f.text_field :email %><br />
+     <p>Bio</p><%= f.text_area :bio %><br />
+     <%= f.submit "submit" %>
    <% end %>
+
+</body>
+</html>
