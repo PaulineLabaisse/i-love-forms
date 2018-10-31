@@ -1,24 +1,32 @@
-# README
+# Mardi 30 Octobre : L'exo des formulaires, le seul exo qui te fais t'éclater avec des forms  :collision: :collision:
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+## La team :family: :
+Noms | Pseudo Slack
+------------ | -------------
+Pauline Labaisse | @Pauline Labaisse :baby_chick:
+Margaux Cortier | @Margaux Crt :penguin:
+Irina Penkovskaia | @Ira P. :octocat:
+Max de Ponfilly | @Max :tiger:
+Hélène Martin | @Helene Cbm :panda_face:
+Victor Gabella | @Chartie :bear:
 
-* Ruby version
 
-* System dependencies
+## :floppy_disk: Le programme :floppy_disk: :
 
-* Configuration
+Lien de l'appli Heroku :
+https://ilovetomate.herokuapp.com
 
-* Database creation
+## :warning: EN CAS D'ERREURS  ```myapp_development" does not exist Extracted source (around line #661)```:warning:
 
-* Database initialization
+"Putain erreur en ligne #661, whaaaaat???" :no_mouth:
+Si jamais cette erreur survient, pas de panique !! il vous suffit de vous placer dans le dossier i-love-forms, puis de suivre ces etapes :
 
-* How to run the test suite
+	1. ```$ bundle install```
+	2. ```$ bundle exec rake db:create```
+	3. ```$ bundle exec rake db:migrate```
+	4. ```$ bundle exec rails server```
 
-* Services (job queues, cache servers, search engines, etc.)
+Voilà, ton porgramme est finalement réparé, je te laisse aller t'amuser avec mes formulaires! :v: :wave:
 
-* Deployment instructions
-
-* ...
+## Enjoy!!!! :heart:
